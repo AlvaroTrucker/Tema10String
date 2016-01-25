@@ -15,7 +15,9 @@ public class Regex1 {
 			+ " usados por Lugovoi y su familia en el Estadio Emirates"
 			+ " del Arsenal, donde presenciaron el encuentro entre los \"Gunnners\""
 			+ " y el CSK de Moscú";
-		if (cadenaPrueba2.matches(".*\\d{2}[A-Za-z]*"))
+		
+		//comprueba que empieza con uno o mas espacios en blanco
+		if (cadenaPrueba2.matches("^\\s+L.*\\d{3}.*ú\\$"))
 			System.out.println("La cadena contiene digitos");
 		else
 			System.out.println("La cadena no contiene digitos");
