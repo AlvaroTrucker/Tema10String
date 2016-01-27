@@ -36,6 +36,7 @@ public class Regex2 {
 		//ahora el problema es que se traga direcciones superiores a 255.255.255.255
 		
 		//version definitiva
-		return IP.matches("(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)");
+		return IP.matches("((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.){3}"
+				+ "(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)");
 	}
 }
