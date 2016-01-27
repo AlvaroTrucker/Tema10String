@@ -27,9 +27,7 @@ public class Regex2 {
 	}
 	
 	//metodo que nos valida la IP
-	public static boolean validarIP(String IP){
-		//boolean valida = false;
-		
+	public static boolean validarIP(String IP){	
 		//primero que encaje con xxx.xxx.xxx.xxx donde x es un digito
 		//return IP.matches("\\d{3}\\.\\d{3}\\.\\d{3}\\.\\d{3}");
 		
@@ -39,7 +37,5 @@ public class Regex2 {
 		
 		//version definitiva
 		return IP.matches("(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)");
-
-		//return valida;
 	}
 }
