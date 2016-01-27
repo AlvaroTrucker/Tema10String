@@ -16,7 +16,7 @@ public class Regex1 {
 			+ " del Arsenal, donde presenciaron el encuentro entre los \"Gunnners\""
 			+ " y el CSK de Moscú";
 		
-		//comprueba que empieza con uno o mas espacios en blanco
+		//comprueba que empieza con uno o mas espacios en blanco 
 		if (cadenaPrueba2.matches("^\\s+L.*\\d{3}.*ú\\$"))
 			System.out.println("La cadena contiene digitos");
 		else
