@@ -1,9 +1,13 @@
 package caracteres;
 
+import java.util.Scanner;
+
 public class EjemploStringBuilder {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//leemos con Scanner las IPs
+		Scanner in = new Scanner(System.in);
+		System.out.println("Introduce IPs válidas");
 
 	}
 
