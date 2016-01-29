@@ -12,22 +12,20 @@ public class TestPalabraLeida {
 		in.close();
 		
 		//creamos el objeto
-		PalabraLeida p = new PalabraLeida(args[0]);
-		System.out.printf("%s tiene %d letras",args[0],palabraIn, p.numeroLetras());
-		System.out.printf("%s empieza por vocal?: ",args[0],palabraIn, p.empiezaVocal());
-		System.out.printf("%s acaba por vocal?: ",args[0],palabraIn, p.empiezaVocal());
-		System.out.printf("%s tiene %d vocales",args[0],palabraIn, p.numeroVocales());
-		System.out.printf("%s empieza por vocal?: ",args[0],palabraIn, p.empiezaVocal());
-		System.out.printf("%s contiene la h?",args[0],palabraIn, p.contieneH());
-		System.out.printf("%s es un palindromo?: ",args[0],palabraIn, p.esPalindromo());
-		System.out.printf("%s empieza por vocal?: ",args[0],palabraIn, p.empiezaVocal());
+		PalabraLeida p = new PalabraLeida(palabraIn);
+		System.out.printf("%s tiene %d letras%n",palabraIn, p.numeroLetras());
+		System.out.printf("%s empieza por vocal?: %b%n ",palabraIn, p.empiezaVocal());
+		System.out.printf("%s acaba por vocal?: %b%n",palabraIn, p.acabaVocal());
+		System.out.printf("%s tiene %d vocales %n",palabraIn, p.numeroVocales());
+		System.out.printf("%s contiene la h? %b%n",palabraIn, p.contieneH());
+		System.out.printf("%s es un palindromo?: %b%n",palabraIn, p.esPalindromo());
 
 		//programacion de forma segura
 		if (args.length == 0){
 			System.out.println("Falta argumento");
 			System.exit(1);
 		}
-		System.out.printf("%s es igual que %s?");
+		System.out.printf("%s es igual a %s: %b%n",palabraIn,args[0],p.sonIguales(args[0]));
 
 	}
 
