@@ -7,7 +7,7 @@ public class TestClaveSegura {
 	public static void main(String[] args) {
 		ClaveSegura c = new ClaveSegura();
 		final String FUENTE_CARACTERES = "aAbBcCdDeEfFgGhHiIjJkKlLm"
-				+ "MnNñÑoOpPqQrRsStTuUvVwWxXyYzZ0123456789>?()=@.:,;!"
+				+ "MnNÃ±Ã‘oOpPqQrRsStTuUvVwWxXyYzZ0123456789>?()=@.:,;!"
 				+ "<&{}";
 		
 		//creo el objeto Random para sacar caracteres aleatorios
@@ -22,10 +22,10 @@ public class TestClaveSegura {
 		}
 		
 		//muestro la clave generada y la actualizo en el setter
-		System.out.println("La contraseña es "+string);
+		System.out.println("La contraseÃ±a es "+string);
 		c.setClave(string.toString());
 		
 		//muestro si la clave generada es segura o no
-		System.out.println("La contraseña "+string+" es segura?: "+c.esClaveSegura());		
+		System.out.println("La contraseÃ±a "+string+" es segura?: "+c.esClaveSegura());		
 	}
 }
