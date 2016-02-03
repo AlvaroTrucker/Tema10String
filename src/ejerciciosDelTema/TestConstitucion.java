@@ -2,6 +2,7 @@ package ejerciciosDelTema;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class TestConstitucion {
@@ -14,17 +15,23 @@ public class TestConstitucion {
 		List<String> palabrasConstitucion = new ArrayList<String>();
 		
 		//StringBuilder para almacenar las palabras del ArrayList
-		StringBuilder sb = new StringBuilder();
+		StringBuilder sb = new StringBuilder(500);
 		
-		String palabra;
+		//vuelco todas las palabras en el ArrayList
+		while(in.hasNext()){
+			palabrasConstitucion.add(in.next());
+		}
+		
+		//creo la variable random y genero aleatoriamente 500 palabras del fichero
+		Random random = new Random();
 		int contador = 0;
-		while(in.hasNext() && sb.length()<500){
-			palabra = in.nextLine();
-			palabrasConstitucion.add(palabra);
-			sb.append(palabra);
+		while (contador<500) {
+			sb.append(palabrasConstitucion.get(random.nextInt(palabrasConstitucion.size()+1)).toString()+" ");
 			contador++;
 		}
-		System.out.println("Hay "+contador+" palabras en el fichero");
-		System.out.println();
+		
+		//comprobacion de lo anterior
+		System.out.println(sb);
+		System.out.println("Hay "+contador+" palabras");
 	}
 }
