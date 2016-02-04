@@ -10,6 +10,7 @@ public class TestConstitucion {
 	public static void main(String[] args) {
 		//leemos con Scanner
 		Scanner in = new Scanner(System.in);
+		in.useDelimiter("[(\\d\\d?\\.)\";/,\\.:\\s*]");
 		
 		//lista para guardar las palabras
 		List<String> palabrasConstitucion = new ArrayList<String>();

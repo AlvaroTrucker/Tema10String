@@ -10,12 +10,13 @@ public class UtilidadesString {
 	//atributos
 	public static final String[] ARTICULOS_DETERMINADOS = {"el", "la", "lo", "las"};
 	public static final String[] ARTICULOS_INDETERMINADOS = {"un", "unos", "una", "unas"};
-	public static final String[] PREPOSICIONES = {"a","ante","bajo","cabe","con","contra","de","desde","en","entre","hacia","hasta","para","por","según","sin","so","sobre","tras"};
+	public static final String[] PREPOSICIONES = {"a","ante","bajo","cabe","con","contra","de","desde","en","entre","hacia","hasta","para","por","segï¿½n","sin","so","sobre","tras"};
 
-	/*
+	
 	//metodo que devuelve el numero de palabras de la frase
 	public static int numeroPalabras(String frase){
-		
+		String[] palabras = frase.split(" ");
+		return palabras.length;
 	}
 	
 	//metodo que devuelve el numero de preposiciones de la frase
